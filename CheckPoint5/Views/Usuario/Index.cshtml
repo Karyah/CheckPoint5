@@ -1,0 +1,27 @@
+﻿@page
+@model CheckPoint5.Models.Usuario
+@{
+}
+
+<h3>@ViewData["chave"]</h3>
+<h3>@ViewBag.titulo</h3>
+<h3>@TempData["mensagem"]</h3>
+
+<br />
+
+<form action="/Cliente/index">
+    <label>Nome</label>
+    <input type="text" name="nome" />
+    <br><br>
+    <label>Login</label>
+    <input type="text" name="login"/>
+    <label>Senha</label>
+    <input type="text" name="senha"/>
+
+    <label>E-mail</label>
+    <input type="text" name="email"/>
+
+    <input type="submit" value="Enviar" />
+</form>
+
+<br />
